@@ -1,4 +1,4 @@
-# A Hybrid Quantum-Classical AI Pipeline for TP53 Mutation Pathogenicity Prediction
+# A Hybrid Quantum-Classical AI Pipeline for p53 Mutation Pathogenicity Prediction
 
 **Integrating ESMFold2 Structure Prediction, IBM Quantum Gate-Based Circuits, and Machine Learning**
 
@@ -14,7 +14,7 @@
 ## 🌟 Highlights
 
 - **129x speedup** over classical docking using IBM Quantum hardware (4.97 min vs. 10.7 hours)
-- **150 TP53 mutations** curated from COSMIC v2026-Q2
+- **150 p53 mutations** curated from COSMIC v2026-Q2
 - **High-confidence structures** predicted via ESMFold2 (mean pLDDT = 87.55)
 - **100% completion rate** on IBM Quantum Eagle-class processors
 - **Therapeutic prioritization** ranking Y220C as #1 (concordant with PYNACLE clinical data, 33% ORR)
@@ -26,9 +26,9 @@
 
 This repository contains the complete code, data, and analysis pipeline for the manuscript:
 
-> **"A Hybrid Quantum-Classical AI Pipeline for TP53 Mutation Pathogenicity Prediction: Integrating ESMFold2 Structure Prediction, IBM Quantum Gate-Based Circuits, and Machine Learning"**
+> **"A Hybrid Quantum-Classical AI Pipeline for p53 Mutation Pathogenicity Prediction: Integrating ESMFold2 Structure Prediction, IBM Quantum Gate-Based Circuits, and Machine Learning"**
 
-TP53 mutations drive approximately 50% of human cancers, yet current pathogenicity predictors rely on sequence or static structures, missing dynamic conformational effects that create druggable crevices (e.g., Y220C).
+p53 mutations drive approximately 50% of human cancers, yet current pathogenicity predictors rely on sequence or static structures, missing dynamic conformational effects that create druggable crevices (e.g., Y220C).
 
 This pipeline integrates:
 - **ESMFold2** for high-confidence protein structure prediction
@@ -51,19 +51,19 @@ This repository accompanies the manuscript under review at *Royal Society Open S
 ## 📁 Repository Structure
 
 ```
-tp53-ml-quantum-pipeline/
-├── Consolidated TP53 Mutation Data.xlsx
+p53-ml-quantum-pipeline/
+├── Consolidated p53 Mutation Data.xlsx
 ├── Jupyter Python Analysis/
 │   ├── CIF to Clean PDB.ipynb
 │   ├── Classical Docking Benchmark.ipynb
-│   ├── ESM Atlas TP53 Clusters Summary.ipynb
+│   ├── ESM Atlas p53 Clusters Summary.ipynb
 │   ├── Generate Supp Figures.ipynb
 │   ├── IBM Quantum Platform.ipynb
 │   ├── ML and Therapeutic Results.ipynb
 │   ├── PDB Docked PDBQT.ipynb
 │   ├── PDB Protein Visualization.ipynb
 │   ├── PDB to PDBQT.ipynb
-│   └── TP53 Mutation Analysis.ipynb
+│   └── p53 Mutation Analysis.ipynb
 ├── LICENSE
 ├── Main Figures/
 │   ├── Cancer_Quantum_Transcription.png
@@ -102,7 +102,7 @@ tp53-ml-quantum-pipeline/
 
 ## 🧬 Dataset
 
-The core mutation cohort was curated from **COSMIC v2026-Q2**, comprising **150 recurrent TP53 missense mutations** including key hotspots:
+The core mutation cohort was curated from **COSMIC v2026-Q2**, comprising **150 recurrent p53 missense mutations** including key hotspots:
 
 | Mutation | Class | COSMIC Count |
 |----------|-------|--------------|
@@ -245,8 +245,8 @@ pandas, scikit-learn, numpy, biopython
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/ricky-madison/tp53-ml-quantum-pipeline.git
-cd tp53-ml-quantum-pipeline
+git clone https://github.com/ricky-madison/p53-ml-quantum-pipeline.git
+cd p53-ml-quantum-pipeline
 ```
 
 ### 2. Install dependencies
@@ -271,7 +271,7 @@ Navigate to `Jupyter Python Analysis/` and execute notebooks sequentially:
 
 ### 4. Access data
 
-- `Consolidated TP53 Mutation Data.xlsx` contains the curated mutation cohort
+- `Consolidated p53 Mutation Data.xlsx` contains the curated mutation cohort
 - Outputs are generated in each notebook
 
 ---
@@ -281,22 +281,21 @@ Navigate to `Jupyter Python Analysis/` and execute notebooks sequentially:
 If you use this pipeline in your research, please cite:
 
 ```bibtex
-@article{madison2026tp53,
-  title={A Hybrid Quantum-Classical AI Pipeline for TP53 Mutation Pathogenicity Prediction: Integrating ESMFold2 Structure Prediction, IBM Quantum Gate-Based Circuits, and Machine Learning},
+@article{madison2026p53,
+  title={A Hybrid Quantum-Classical AI Pipeline for p53 Mutation Pathogenicity Prediction: Integrating ESMFold2 Structure Prediction, IBM Quantum Gate-Based Circuits, and Machine Learning},
   author={Madison, Ricky},
   journal={Royal Society Open Science},
   year={2026},
-  doi={[DOI pending]}
+  doi={[[DOI](https://doi.org/10.5281/zenodo.21110307)]}
 }
 ```
-
 ---
 
 ## 🔗 Data Availability
 
 | Resource | Link |
 |----------|------|
-| GitHub Repository | https://github.com/ricky-madison/tp53-ml-quantum-pipeline |
+| GitHub Repository | https://github.com/ricky-madison/p53-ml-quantum-pipeline |
 | COSMIC Database | https://cancer.sanger.ac.uk/cosmic |
 | UniProt P04637 | https://www.uniprot.org/uniprot/P04637 |
 | RCSB PDB | https://www.rcsb.org/ (1TUP, 2AC0, 3KMD, 1OLG, 4MZI, 1UOL) |
